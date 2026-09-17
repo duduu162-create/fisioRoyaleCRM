@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Fisio Royale · Leads</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/extras.css">
+</head>
+<body>
+  <header>
+    <div>
+      <div class="eyebrow">Fisio Royale</div>
+      <h1>Controle de Leads</h1>
+      <p>Comercial da clínica · todas as áreas</p>
+    </div>
+    <div class="header-actions">
+      <button class="btn ghost" id="areasBtn">Áreas / serviços</button>
+      <button class="btn primary" id="novoLeadBtn">+ Novo lead</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="stats" class="stats"></section>
+
+    <section class="panel priority-panel">
+      <div class="panel-head">
+        <div><h2>Ações prioritárias</h2><p>Quem precisa de retorno primeiro.</p></div>
+        <button class="btn ghost" id="atualizarBtn">Atualizar</button>
+      </div>
+      <div id="prioridades" class="priority-list"></div>
+    </section>
+
+    <section class="toolbar">
+      <input id="busca" placeholder="Buscar nome, telefone, origem ou responsável...">
+      <select id="areaFiltro"><option value="">Todas as áreas</option></select>
+    </section>
+
+    <section>
+      <div class="section-head"><div><h2>Pipeline</h2><p>Clique em um lead para atualizar o estágio, o responsável e a próxima ação.</p></div></div>
+      <div id="pipeline" class="pipeline"></div>
+    </section>
+  </main>
+
+  <div id="modalRoot"></div>
+  <div id="toast"></div>
+  <script src="/app.js"></script>
+  <script src="/areas-admin.js"></script>
+</body>
+</html>
