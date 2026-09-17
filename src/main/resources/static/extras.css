@@ -1,0 +1,12 @@
+.header-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+header .header-actions .btn{white-space:nowrap}
+@media(max-width:620px){
+  header{align-items:center}
+  .header-actions{display:grid;grid-template-columns:1fr;gap:6px;min-width:126px}
+  header .header-actions .btn{padding:9px 10px;font-size:11px;min-height:38px}
+}
+@media(max-width:420px){
+  header{align-items:flex-start}
+  .header-actions{min-width:116px}
+  header h1{max-width:170px}
+}
